@@ -1,9 +1,10 @@
-{
+{"homepage": "https://khusburai28.github.io/Image_Search/",
   "name": "unsplash_image_search",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+  "scripts": {"predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
